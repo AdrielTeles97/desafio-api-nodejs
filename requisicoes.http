@@ -1,14 +1,27 @@
 POST http://localhost:3333/courses
 Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOWZiNGRmYS04ZmM2LTRhY2MtOWM3Ny1kYTExMjhlYTFjODQiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NjA1MzA2OSwiZXhwIjoxNzU2MDU2NjY5fQ.NKNvMcUX1y_5TcWvmwZn_t00-KKBHYNt6zcq2g91yMc
+
 
 {
-  "title": "Curso de JavaScript avançado 2321"
+  "title": "Curso de React Native 2"
 }
 
 ###
 
-GET http://localhost:3333/courses
+GET http://localhost:3333/courses?orderBy=title
 
 ###
 
-GET http://localhost:3333/courses/12a5a44a-8679-4d71-849d-2aea0ca6ed86
+GET http://localhost:3333/courses/96aa3f2d-5af6-40ce-9440-57c22d52a969
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJlOWZiNGRmYS04ZmM2LTRhY2MtOWM3Ny1kYTExMjhlYTFjODQiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTc1NjA1MzA2OSwiZXhwIjoxNzU2MDU2NjY5fQ.NKNvMcUX1y_5TcWvmwZn_t00-KKBHYNt6zcq2g91yMc
+
+###
+
+POST http://localhost:3333/sessions
+Content-Type: application/json
+
+{
+    "email": "Leonardo_Batista66@hotmail.com",
+    "password": "123456"
+}
