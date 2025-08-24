@@ -22,5 +22,5 @@ primary_region = 'gig'
   cpus = 1
   memory_mb = 256
 
-  [deploy]
-    release_command = "npm run db:migrate"
+  
+    
